@@ -39,7 +39,7 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: #F5F5DC;
+    color: antiquewhite;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -137,7 +137,7 @@ span{
 .home-img img{
     position: relative;
     width: 32vw;
-    border-radius: 50%;
+    border-radius: 0%;
     box-shadow: 0 0 25px solid #F5F5DC;
     cursor: pointer;
     transition: 0.2s linear;
