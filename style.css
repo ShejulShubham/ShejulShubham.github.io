@@ -1,218 +1,117 @@
-:root {
-    --primary-color: #adf0d4;
-    --secondary-color: #1fd8a4;
-    --bg-color: #0d1512;
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    transition-duration: 200ms;
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    padding: 14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-p {
-    font-size: 1.05em;
-}
-
-.darkerText {
-    color: var(--secondary-color);
-}
-
-header, main, footer {
-    max-width: 700px;
-    margin: 0 auto;
-    width: 100%;
+header,
+main,
+footer {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 nav {
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-nav a {
-    cursor: pointer;
-    text-decoration: none;
+nav i {
+  font-size: 1.3rem;
 }
 
-nav a:hover {
-    opacity: 0.7;
-}
-
-main, section, .nameContainer {
-    display: flex;
-    flex-direction: column;
+main,
+section {
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    gap: 64px;
+  gap: 4rem;
 }
 
 section {
-    gap: 32px;
+  gap: 1rem;
 }
 
-.nameContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.intro-header p {
+  padding-top: 0.25rem;
 }
 
-.statsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
+.intro-description {
+  max-width: 500px;
 }
 
-.imageContainer {
-    border-radius:  100%;
-    max-width: 114px;
-    overflow: hidden;
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
 }
 
-.imageContainer img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+.link-arrow {
+  color: var(--color-link);
+  transform: rotate(-45deg);
 }
 
-.stats {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+.color-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.stats > div {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.stats div i {
-    font-size: 1.4em;
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.stats div div {
-    display: grid;
-    place-items: center;
-    min-width: 40px;
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
 }
 
-.aboutMe {
-    line-height: 1.5em;;
+.tech-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.25rem 0;
 }
 
-.outreach {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    cursor: pointer;
-    width: fit-content;
-    margin-right: auto;
+.tech-list div {
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--border-radius-small);
 }
 
-.outreach:hover {
-    opacity: 0.7;
-}
-
-.outreach i {
-    transform: rotate(-45deg);
-}
-
-.projectContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.headerText {
-    margin-bottom: 24px;
-}
-
-.projectItem {
-    display: flex;
-    align-items: stretch;
-    gap: 24px;
-}
-
-.projectItem div:first-child {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.projectItem div:last-child {
-    aspect-ratio: 16/9;
-    max-width: 30%;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.projectItem div:last-child img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.linkContainer {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.linkItem {
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    gap: 14px !important;
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.linkItem:hover {
-    opacity: 0.7;
-}
-
-.linkItem p {
-    font-size: 0.9em;
+.tech-list p {
+  font-size: 0.8rem;
 }
 
 @media (min-width: 640px) {
-    .statsContainer {
-        flex-direction: row;
-    }
+  .project-card {
+    flex-direction: row;
+  }
 
-    .stats {
-        gap: 0px;
-    }
-
-    .aboutMe {
-        width: 80%;
-        margin-right: auto;
-    }
+  .project-card .img-div {
+    max-width: 30%;
+  }
 }
