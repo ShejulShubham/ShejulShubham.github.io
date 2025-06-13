@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/public/favicon.ico"
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shubham Shejul</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/public/favicon.ico"
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Portfolio: Shubham Shejul</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fanta.css" />
     <link
@@ -17,7 +23,9 @@
   </head>
   <body>
     <header>
-      <a href="/">Shubham Shejul</a>
+      <a target="_blank" href="https://www.linkedin.com/in/shejul-shubham"
+        >Shubham Shejul</a
+      >
       <nav>
         <a target="_blank" href="https://github.com/ShejulShubham"
           ><i class="fa-brands fa-github"></i
@@ -30,8 +38,16 @@
     <main>
       <section>
         <div class="intro-header">
-          <h1>Hello! I'm Shubham...</h1>
-          <p>Software Developer</p>
+          <div class="image-container">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D4D03AQGAGxea8wIe4g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724929164677?e=1755129600&v=beta&t=n8NL2F3_Taw6fxguTDjIqG_FKw8kv8ZfVd0YspO2Q7s"
+              alt="profile-img"
+            />
+          </div>
+          <div class="heading">
+            <h1>Hello! I'm Shubham...</h1>
+            <p>Software Developer</p>
+          </div>
         </div>
         <h5 class="intro-decription">
           A Civil Engineer by qualification, and Software Engineer by trade.
@@ -74,22 +90,24 @@
           </thead>
           <tbody>
             <tr>
-              <td>Javascript</td>
-              <td>ReactJS | NodeJS | ExpressJS</td>
+              <td>Web FrameWorks and Libraries</td>
+              <td>ReactJS | NodeJS | Spring Boot | .NET</td>
             </tr>
             <tr>
-              <td>Python</td>
-              <td>Django</td>
+              <td>CSS</td>
+              <td>Bootstrap | TailwindCSS | FantaCSS |</td>
             </tr>
             <tr>
-              <td>Web</td>
-              <td>
-                TailwindCSS | FantaCSS | Firebase | MySQL | GIT | Docker | AWS
-              </td>
+              <td>Database</td>
+              <td>MySQL | MongoDB</td>
             </tr>
             <tr>
-              <td>Design</td>
-              <td>Microsoft Paint</td>
+              <td>Version Control</td>
+              <td>Git | Github</td>
+            </tr>
+            <tr>
+              <td>Programming Languages</td>
+              <td>C++ | Javascript | Java | C#</td>
             </tr>
           </tbody>
         </table>
@@ -97,6 +115,96 @@
       <section>
         <h2>Latest Projects</h2>
         <div class="cards-grid">
+          <!-- first project -->
+          <div class="project-card">
+            <div>
+              <p>June 12, 2025</p>
+              <h4>Exrupee ⋅ The Subscription tracker</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Firebase</p>
+                </div>
+              </div>
+              <p>Track all your subscription analytics!</p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://shejulshubham-app-exrupee.netlify.app/"
+                  ><div>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                  </div>
+                  Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/ShejulShubham/Exrupee.git"
+                  ><div>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/exrupee.png"
+                alt="exrupee-thumbnail"
+              />
+            </div>
+          </div>
+          <!-- second project  -->
+          <div class="project-card">
+            <div>
+              <p>March 31, 2025</p>
+              <h4>Broodl - Mood Tracking Made Simple</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>TailwindCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Firebase</p>
+                </div>
+              </div>
+              <p>It’s a tool to help you understand yourself better</p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://shejulshubham-app-broodl.netlify.app/"
+                  ><div>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                  </div>
+                  Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/ShejulShubham/Broodl.git"
+                  ><div>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="./public/broodl.png"
+                alt="broodl-thumbnail"
+              />
+            </div>
+          </div>
+
+          <!-- third project -->
           <div class="project-card">
             <div>
               <p>February 28, 2025</p>
@@ -114,75 +222,119 @@
               </div>
               <p>The Simple 30 Days Workout Plan</p>
               <div class="project-links">
-                <a target="_blank" href="https://shejulshubham-app-brogram.netlify.app/">Live</a>
-                <a target="_blank" href="https://github.com/ShejulShubham/Brogram.git">GitHub</a>
+                <a
+                  target="_blank"
+                  href="https://shejulshubham-app-brogram.netlify.app/"
+                  ><div>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                  </div>
+                  Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/ShejulShubham/Brogram.git"
+                  ><div>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  GitHub</a
+                >
               </div>
             </div>
             <div class="img-div">
               <img
                 class="big-img"
-                src="/public/brogram.png"
-                alt="shubhamshejul-thumbnail"
+                src="./public/brogram.png"
+                alt="brogram-thumbnail"
               />
             </div>
           </div>
 
+          <!-- fourth project -->
           <div class="project-card">
             <div>
-              <p>July 15, 2023</p>
-              <h4>Shubham Shejul</h4>
+              <p>February 15, 2025</p>
+              <h4>Caffiend - Stay ahead of your addiction</h4>
               <div class="tech-list">
                 <div class="card-button-secondary">
-                  <p>NextJS</p>
+                  <p>ReactJS</p>
                 </div>
                 <div class="card-button-secondary">
-                  <p>NextJS</p>
+                  <p>Firebase</p>
                 </div>
                 <div class="card-button-secondary">
-                  <p>NextJS</p>
+                  <p>FantaCSS</p>
                 </div>
               </div>
-              <p>(write something)</p>
+              <p>Coffee tracking made easy</p>
               <div class="project-links">
-                <a target="_blank" href="/">Live</a>
-                <a target="_blank" href="/">GitHub</a>
+                <a
+                  target="_blank"
+                  href="https://shejulshubham-app-caffiend.netlify.app/"
+                  ><div>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                  </div>
+                  Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/ShejulShubham/Caffiend.git"
+                  ><div>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  GitHub</a
+                >
               </div>
             </div>
             <div class="img-div">
               <img
                 class="big-img"
-                src="/public/fantacss.png"
-                alt="shubhamshejul-thumbnail"
+                src="./public/caffiend.png"
+                alt="caffiend-thumbnail"
               />
             </div>
           </div>
 
+          <!-- fifth project -->
           <div class="project-card">
             <div>
-              <p>July 15, 2023</p>
-              <h4>Shubham Shejul</h4>
+              <p>January 20, 2025</p>
+              <h4>Pokédex - Meet your favorite Pokédmons</h4>
               <div class="tech-list">
                 <div class="card-button-secondary">
-                  <p>NextJS</p>
+                  <p>ReactJS</p>
                 </div>
                 <div class="card-button-secondary">
-                  <p>NextJS</p>
+                  <p>Firebase</p>
                 </div>
                 <div class="card-button-secondary">
-                  <p>NextJS</p>
+                  <p>FantaCSS</p>
                 </div>
               </div>
-              <p>(write something)</p>
+              <p>Collection of Pokémons information</p>
               <div class="project-links">
-                <a target="_blank" href="/">Live</a>
-                <a target="_blank" href="/">GitHub</a>
+                <a
+                  target="_blank"
+                  href="https://shejulshubham-app-pokedex.netlify.app/"
+                  ><div>
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                  </div>
+                  Live</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/ShejulShubham/Pokedex.git"
+                  ><div>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  GitHub</a
+                >
               </div>
             </div>
             <div class="img-div">
               <img
                 class="big-img"
-                src="/public/fantacss.png"
-                alt="shubhamshejul-thumbnail"
+                src="./public/caffiend.png"
+                alt="Pokédex-thumbnail"
               />
             </div>
           </div>
@@ -195,7 +347,12 @@
         <a target="_blank" href="https://github.com/ShejulShubham"
           >Shubham Shejul</a
         >
-        ✨ the repo on <a target="_blank" href="">GitHub</a>
+        ✨ the repo on
+        <a
+          target="_blank"
+          href="https://github.com/ShejulShubham/ShejulShubham.github.io.git"
+          >GitHub</a
+        >
       </p>
     </footer>
     <script>

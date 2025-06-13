@@ -44,12 +44,36 @@ section {
   gap: 1rem;
 }
 
+.intro-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 4rem;
+}
+
+.heading {
+  font-size: x-large;
+  width: 50vh;
+}
+
 .intro-header p {
   padding-top: 0.25rem;
 }
 
-.intro-description {
-  max-width: 500px;
+.image-container {
+  width: 50vh;
+  width: 114px;
+  overflow: hidden;
+}
+
+.image-container img {
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+h5 {
+  padding: 0 1rem 0 0;
 }
 
 .links-container {
@@ -82,11 +106,21 @@ section {
   gap: 1rem;
 }
 
+.project-card>div:first-of-type {
+  flex: 1;
+}
+
 .project-links {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding-top: 0.5rem;
+}
+
+.project-links a {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .tech-list {
@@ -107,6 +141,11 @@ section {
 }
 
 @media (min-width: 640px) {
+
+  h5 {
+    padding: 0 3rem 0 0;
+  }
+
   .project-card {
     flex-direction: row;
   }
