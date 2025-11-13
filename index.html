@@ -2,398 +2,480 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/public/favicon.ico"
-      <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio: Shubham Shejul</title>
+    <meta name="description" content="Software Developer Portfolio - Shubham Shejul. Civil Engineer turned Software Engineer based in India." />
+    <meta name="author" content="Shubham Shejul" />
+
+    <meta property="og:title" content="Portfolio: Shubham Shejul" />
+    <meta property="og:description" content="Software Developer Portfolio - Shubham Shejul. Civil Engineer turned Software Engineer based in India." />
+    <meta property="og:type" content="website" />
+    
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fanta.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <header>
-      <a target="_blank" href="https://www.linkedin.com/in/shejul-shubham"
-        >Shubham Shejul</a
-      >
-      <nav>
-        <a target="_blank" href="https://github.com/ShejulShubham"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a target="_blank" href="https://www.linkedin.com/in/shejul-shubham"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="intro-header">
-          <div class="image-container">
-            <img
-              src="https://media.licdn.com/dms/image/v2/D4D03AQGAGxea8wIe4g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724929164677?e=1755129600&v=beta&t=n8NL2F3_Taw6fxguTDjIqG_FKw8kv8ZfVd0YspO2Q7s"
-              alt="profile-img"
-            />
-          </div>
-          <div class="heading">
-            <h1>Hello! I'm Shubham...</h1>
-            <p>Software Developer</p>
-          </div>
-        </div>
-        <h5 class="intro-decription">
-          A Civil Engineer by qualification, and Software Engineer by trade.
-          Based in India, I love to walk, play video games, and build out all
-          sorts of fun and useful internet application.
-        </h5>
-        <div class="links-container">
-          <i class="fa-solid link-arrow fa-arrow-right"></i>
-          <a href="mailto:shejulshubhamdeshmukh@gmail.com"> Email Me</a>
-          <a target="_blank" href="https://github.com/ShejulShubham">GitHub</a>
-          <a target="_blank" href="https://www.linkedin.com/in/shejul-shubham"
-            >Linkedin</a
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-content">
+        <a 
+          href="https://www.linkedin.com/in/shejul-shubham" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="header-name"
+        >
+          Shubham Shejul
+        </a>
+        <nav class="header-nav">
+          <a 
+            href="https://github.com/ShejulShubham" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="nav-link"
+            aria-label="GitHub"
           >
-        </div>
+            <i data-lucide="github" class="icon"></i>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/shejul-shubham" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="nav-link"
+            aria-label="LinkedIn"
+          >
+            <i data-lucide="linkedin" class="icon"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
 
-        <div id="play-game">
-          <button onclick="playGame()">Play Game???</button>
-        </div>
-        <div style="display: none" class="color-div">
-          <h4>Pick a color</h4>
-          <p style="display: none">Great... now it's ruined!</p>
-          <input
-            type="color"
-            id="color-picker"
-            onchange="changeColor()"
-            value="#0084ff"
-          />
-          <button onclick="resetColor()" style="display: none">Reset</button>
-        </div>
-      </section>
-
-      <section>
-        <h2>Skills</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Area</th>
-              <th>Technologies</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Web FrameWorks and Libraries</td>
-              <td>ReactJS | NodeJS | Spring Boot | .NET</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Bootstrap | TailwindCSS | FantaCSS |</td>
-            </tr>
-            <tr>
-              <td>Database</td>
-              <td>MySQL | MongoDB</td>
-            </tr>
-            <tr>
-              <td>Version Control</td>
-              <td>Git | Github</td>
-            </tr>
-            <tr>
-              <td>Programming Languages</td>
-              <td>C++ | Javascript | Java | C#</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
-        <h2>Latest Projects</h2>
-        <div class="cards-grid">
-          <!-- first project -->
-          <div class="project-card">
-            <div>
-              <p>June 12, 2025</p>
-              <h4>Exrupee ⋅ The Subscription tracker</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>NextJS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>FantaCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Firebase</p>
-                </div>
-              </div>
-              <p>Track all your subscription analytics!</p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://shejulshubham-app-exrupee.netlify.app/"
-                  ><div>
-                    <i class="fa-solid fa-bolt-lightning"></i>
-                  </div>
-                  Live</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/ShejulShubham/Exrupee.git"
-                  ><div>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                  GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
+    <main class="main-content">
+      <div class="container">
+        <!-- Intro Section -->
+        <section class="intro-section">
+          <div class="intro-header">
+            <div class="profile-image">
               <img
-                class="big-img"
-                src="./public/exrupee.png"
-                alt="exrupee-thumbnail"
+                src="https://media.licdn.com/dms/image/v2/D4D03AQGAGxea8wIe4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724929164662?e=1764806400&v=beta&t=fRFRV6O9MGGrzdqtAdEq-xgyoxsOu5X996ZTyoMMFp0"
+                alt="Shubham Shejul"
               />
             </div>
-          </div>
-          <!-- second project  -->
-          <div class="project-card">
-            <div>
-              <p>March 31, 2025</p>
-              <h4>Broodl - Mood Tracking Made Simple</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>NextJS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>TailwindCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Firebase</p>
-                </div>
-              </div>
-              <p>It’s a tool to help you understand yourself better</p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://shejulshubham-app-broodl.netlify.app/"
-                  ><div>
-                    <i class="fa-solid fa-bolt-lightning"></i>
-                  </div>
-                  Live</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/ShejulShubham/Broodl.git"
-                  ><div>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                  GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/broodl.png"
-                alt="broodl-thumbnail"
-              />
+            <div class="intro-text">
+              <h1 class="main-title">Hello! I'm Shubham...</h1>
+              <p class="subtitle">Software Developer</p>
             </div>
           </div>
+          
+          <p class="intro-description">
+            A Civil Engineer by qualification, and Software Engineer by trade. Based in India, I love to walk, 
+            play video games, and build out all sorts of fun and useful internet application.
+          </p>
 
-          <!-- third project -->
-          <div class="project-card">
-            <div>
-              <p>February 28, 2025</p>
-              <h4>Brogram</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>ReactJS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>FantaCSS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Javascript</p>
-                </div>
-              </div>
-              <p>The Simple 30 Days Workout Plan</p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://shejulshubham-app-brogram.netlify.app/"
-                  ><div>
-                    <i class="fa-solid fa-bolt-lightning"></i>
-                  </div>
-                  Live</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/ShejulShubham/Brogram.git"
-                  ><div>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                  GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/brogram.png"
-                alt="brogram-thumbnail"
-              />
-            </div>
+          <div class="links-container">
+            <i data-lucide="arrow-right" class="icon-small"></i>
+            <a 
+              href="mailto:shejulshubhamdeshmukh@gmail.com"
+              class="link-primary"
+            >
+              Email Me
+            </a>
+            <a 
+              href="https://github.com/ShejulShubham" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="link-primary"
+            >
+              GitHub
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/shejul-shubham" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="link-primary"
+            >
+              LinkedIn
+            </a>
+            <a 
+              href="/resume.html" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="link-primary"
+            >
+              Resume
+            </a>
           </div>
+        </section>
 
-          <!-- fourth project -->
-          <div class="project-card">
-            <div>
-              <p>February 15, 2025</p>
-              <h4>Caffiend - Stay ahead of your addiction</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>ReactJS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Firebase</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>FantaCSS</p>
-                </div>
-              </div>
-              <p>Coffee tracking made easy</p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://shejulshubham-app-caffiend.netlify.app/"
-                  ><div>
-                    <i class="fa-solid fa-bolt-lightning"></i>
-                  </div>
-                  Live</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/ShejulShubham/Caffiend.git"
-                  ><div>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                  GitHub</a
-                >
-              </div>
-            </div>
-            <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/caffiend.png"
-                alt="caffiend-thumbnail"
-              />
-            </div>
+        <!-- Skills Section -->
+        <section class="skills-section">
+          <h2 class="section-title">Skills</h2>
+          <div class="table-container">
+            <table class="skills-table">
+              <thead>
+                <tr>
+                  <th>Area</th>
+                  <th>Technologies</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Web Frameworks and Libraries</td>
+                  <td>ReactJS | NodeJS</td>
+                </tr>
+                <tr>
+                  <td>CSS</td>
+                  <td>Bootstrap | TailwindCSS | FantaCSS</td>
+                </tr>
+                <tr>
+                  <td>Database</td>
+                  <td>MySQL | MongoDB</td>
+                </tr>
+                <tr>
+                  <td>Version Control</td>
+                  <td>Git | Github</td>
+                </tr>
+                <tr>
+                  <td>Programming Languages</td>
+                  <td>Javascript | Java | C++</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </section>
 
-          <!-- fifth project -->
-          <div class="project-card">
-            <div>
-              <p>January 20, 2025</p>
-              <h4>Pokédex - Meet your favorite Pokédmons</h4>
-              <div class="tech-list">
-                <div class="card-button-secondary">
-                  <p>ReactJS</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>Firebase</p>
-                </div>
-                <div class="card-button-secondary">
-                  <p>FantaCSS</p>
-                </div>
-              </div>
-              <p>Collection of Pokémons information</p>
-              <div class="project-links">
-                <a
-                  target="_blank"
-                  href="https://shejulshubham-app-pokedex.netlify.app/"
-                  ><div>
-                    <i class="fa-solid fa-bolt-lightning"></i>
+        <!-- Projects Section -->
+        <section class="projects-section">
+          <h2 class="section-title">Latest Projects</h2>
+          <div class="projects-grid">
+            <!-- Project 1: Emprog -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">Aug 25, 2025</p>
+                  <h4 class="project-title">Emprog ⋅ Easiest way to track your shows</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">ReactJS</span>
+                    <span class="tech-tag">TailwindCSS</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Zustand</span>
                   </div>
-                  Live</a
-                >
-                <a
-                  target="_blank"
-                  href="https://github.com/ShejulShubham/Pokedex.git"
-                  ><div>
-                    <i class="fa-brands fa-github"></i>
+                  
+                  <p class="project-description">A modern web application to track your favorite shows, movies, and other videos with ease.</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://shejulshubham-app-emprog.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="external-link" class="icon-small"></i>
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/ShejulShubham/Emprog.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
                   </div>
-                  GitHub</a
-                >
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/emprog.png" alt="Emprog thumbnail" />
+                </div>
               </div>
             </div>
-            <div class="img-div">
-              <img
-                class="big-img"
-                src="./public/caffiend.png"
-                alt="Pokédex-thumbnail"
-              />
+
+            <!-- Project 1: Ai.local -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">Jul 21, 2025</p>
+                  <h4 class="project-title">Ai.local ⋅ New AI Companion</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">Ollama</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Open WebUI</span>
+                    <span class="tech-tag">Nginx</span>
+                  </div>
+                  
+                  <p class="project-description">Plug and Play system to try out new open source LLM models which runs on local machine.</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/ShejulShubham/ai.local.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/openwebui.png" alt="Ai.local thumbnail" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 1: Exrupee -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">June 12, 2025</p>
+                  <h4 class="project-title">Exrupee ⋅ The Subscription tracker</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">NextJS</span>
+                    <span class="tech-tag">FantaCSS</span>
+                    <span class="tech-tag">Firebase</span>
+                  </div>
+                  
+                  <p class="project-description">Track all your subscription analytics!</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://shejulshubham-app-exrupee.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="external-link" class="icon-small"></i>
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/ShejulShubham/Exrupee.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/exrupee.png" alt="Exrupee thumbnail" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Broodl -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">March 31, 2025</p>
+                  <h4 class="project-title">Broodl ⋅ Mood Tracking Made Simple</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">NextJS</span>
+                    <span class="tech-tag">TailwindCSS</span>
+                    <span class="tech-tag">Firebase</span>
+                  </div>
+                  
+                  <p class="project-description">It's a tool to help you understand yourself better</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://shejulshubham-app-broodl.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="external-link" class="icon-small"></i>
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/ShejulShubham/Broodl.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/broodl.png" alt="Broodl thumbnail" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3: Brogram -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">February 28, 2025</p>
+                  <h4 class="project-title">Brogram ⋅ A Workout Planner</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">ReactJS</span>
+                    <span class="tech-tag">FantaCSS</span>
+                    <span class="tech-tag">Javascript</span>
+                  </div>
+                  
+                  <p class="project-description">The Simple 30 Days Workout Plan</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://shejulshubham-app-brogram.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="external-link" class="icon-small"></i>
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/ShejulShubham/Brogram.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/brogram.png" alt="Brogram thumbnail" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4: Caffiend -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">February 15, 2025</p>
+                  <h4 class="project-title">Caffiend ⋅ Stay ahead of your Addiction</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">ReactJS</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">FantaCSS</span>
+                  </div>
+                  
+                  <p class="project-description">Coffee tracking made easy</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://shejulshubham-app-caffiend.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="external-link" class="icon-small"></i>
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/ShejulShubham/Caffiend.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/caffiend.png" alt="Caffiend thumbnail" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5: Pokédex -->
+            <div class="project-card">
+              <div class="project-content">
+                <div class="project-info">
+                  <p class="project-date">January 20, 2025</p>
+                  <h4 class="project-title">Pokédex ⋅ Meet your favorite Pokémons</h4>
+                  
+                  <div class="tech-tags">
+                    <span class="tech-tag">ReactJS</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">FantaCSS</span>
+                  </div>
+                  
+                  <p class="project-description">Collection of Pokémons information</p>
+                  
+                  <div class="project-links">
+                    <a
+                      href="https://shejulshubham-app-pokedex.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="external-link" class="icon-small"></i>
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/ShejulShubham/Pokedex.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="project-link"
+                    >
+                      <i data-lucide="github" class="icon-small"></i>
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="project-image">
+                  <img src="/public/pokedex.png" alt="Pokédex thumbnail" />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-    <footer>
-      <p>
-        By
-        <a target="_blank" href="https://github.com/ShejulShubham"
-          >Shubham Shejul</a
-        >
-        ✨ the repo on
-        <a
-          target="_blank"
-          href="https://github.com/ShejulShubham/ShejulShubham.github.io.git"
-          >GitHub</a
-        >
-      </p>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>
+          By
+          <a 
+            href="https://github.com/ShejulShubham" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            Shubham Shejul
+          </a>
+          ✨ the repo on
+          <a 
+            href="https://github.com/ShejulShubham/ShejulShubham.github.io.git" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            GitHub
+          </a>
+        </p>
+      </div>
     </footer>
+
     <script>
-      // This is where we create the interactivity for our little color switching game
-
-      // 1. Select all the HTML elements so that we can manipulate them
-      const body = document.querySelector("body");
-      const colorInput = document.getElementById("color-picker");
-      const colorDiv = document.querySelector(".color-div");
-      const hiddenText = document.querySelector(".color-div p");
-      const resetButton = document.querySelector(".color-div button");
-      const playButton = document.getElementById("play-game");
-
-      // 2. Create the function
-      function playGame() {
-        // this function enables the play of the game by showing the color selector input
-        colorDiv.style.display = "block";
-        playButton.style.display = "none";
-      }
-
-      function changeColor() {
-        // take the user selected color on the input, and assign it to be the background color of the website
-        const selectedColor = colorInput.value;
-        body.style.background = selectedColor;
-        resetButton.style.display = "block";
-        hiddenText.style.display = "block";
-        colorInput.style.display = "none";
-      }
-
-      function resetColor() {
-        body.style.background = "white";
-        colorInput.style.display = "block";
-        playButton.style.display = "block";
-
-        hiddenText.style.display = "none";
-        resetButton.style.display = "none";
-        colorDiv.style.display = "none";
-      }
-
-      // 3. Is to assign the functions to the buttons by adding them function
-      // call to the actual elements (done above in HTML code)
+      // Initialize Lucide icons
+      lucide.createIcons();
     </script>
   </body>
 </html>
