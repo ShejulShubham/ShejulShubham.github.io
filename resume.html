@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: #f7f7f7;
-    }
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background: #f7f7f7;
+      }
 
-    header {
-      background: #ffff;
-      color: #1a1a1a;
-      border-bottom: 1px solid #e5e7eb;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
+      header {
+        background: #ffff;
+        color: #1a1a1a;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
 
-    iframe {
-      width: 80%;
-      height: 90vh;
-      border: 2px solid #444;
-      border-radius: 8px;
-      background: white;
-    }
+      iframe {
+        width: 80%;
+        height: 90vh;
+        border: 2px solid #444;
+        border-radius: 8px;
+        background: white;
+      }
 
-    .download {
-      text-align: center;
-      margin: 20px;
-    }
+      .download {
+        text-align: center;
+        margin: 20px;
+      }
 
-    .download a {
-      background: #2d2d2d;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
+      .download a {
+        background: #2d2d2d;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
 
-    .download a:hover {
-      background: #444;
-    }
-  </style>
-</head>
-<body>
+      .download a:hover {
+        background: #444;
+      }
 
-<header>
-  My Resume
-</header>
+      .resume-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
 
-<div class="container">
-  <iframe src="https://shejulshubham.github.io/resume/cv.pdf"></iframe>
-</div>
+      .code-input {
+        background-color: #f4f4f4; /* Light grey background */
+        border: 1px solid #ccc;
+        border-left: 5px solid #007bff; /* Nice accent line */
+        color: #333;
+        font-family: "Consolas", "Monaco", monospace; /* Code font */
+        padding: 10px;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 4px;
+        font-size: 14px;
+        outline: none;
+        cursor: text;
+      }
 
-<div class="download">
-  <a href="https://shejulshubham.github.io/resume/cv.pdf" download>Download Resume</a>
-</div>
+      .code-input:focus {
+        background-color: #e8f0fe;
+        border-color: #007bff;
+      }
 
-</body>
+      .copy-btn {
+        background-color: rgb(80, 187, 223);
+        color: white;
+        border: none;
+        padding: 5px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-size: 12px;
+        transition: background 0.2s;
+      }
+
+      .copy-btn:hover {
+        background-color: rgb(5, 119, 157);
+      }
+    </style>
+  </head>
+  <body>
+    <header>My Resume</header>
+
+    <div class="container">
+      <div class="resume-container">
+        <input
+          id="resume-link"
+          type="text"
+          value="https://shejulshubham.github.io/resume/cv.pdf"
+          readonly
+          class="code-input"
+          onclick="copyLink()"
+        />
+        <button class="copy-btn" onclick="copyLink()">Copy</button>
+      </div>
+      <iframe src="https://shejulshubham.github.io/resume/cv.pdf"></iframe>
+    </div>
+    <script>
+      function copyLink() {
+        // Get the text field
+        var copyText = document.getElementById("resume-link");
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value).then(() => {
+          // Optional: Change button text to indicate success
+          const btn = document.querySelector(".copy-btn");
+          btn.innerText = "Copied!";
+          btn.style.backgroundColor = "#4caf50";
+          setTimeout(() => {
+            btn.innerText = "Copy";
+            btn.style.backgroundColor = "#4caf50";
+          }, 5000);
+        });
+      }
+    </script>
+  </body>
 </html>
