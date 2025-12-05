@@ -16,7 +16,7 @@
   --color-card: #ffffff;
   --color-hover-bg: #f9fafb;
   --color-secondary-bg: #f3f4f6;
-  
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -25,18 +25,19 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
-  
+
   /* Border Radius */
   --radius: 0.75rem;
   --radius-sm: 0.5rem;
   --radius-full: 9999px;
-  
+
   /* Transitions */
   --transition: all 0.3s ease;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   color: var(--color-foreground);
   background-color: var(--color-background);
@@ -80,6 +81,7 @@ body {
 
 .header-name:hover {
   color: var(--color-primary);
+  transform: scale(1.1);
 }
 
 .header-nav {
@@ -95,11 +97,12 @@ body {
 
 .nav-link:hover {
   color: var(--color-primary);
+  transform: scale(1.1);
 }
 
 .icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .icon-small {
@@ -340,11 +343,11 @@ body {
   .intro-header {
     align-items: center;
   }
-  
+
   .main-title {
     font-size: 3rem;
   }
-  
+
   .project-content {
     grid-template-columns: 2fr 1fr;
   }
@@ -354,16 +357,16 @@ body {
   .main-title {
     font-size: 2rem;
   }
-  
+
   .intro-header {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .project-content {
     grid-template-columns: 1fr;
   }
-  
+
   .project-image {
     order: -1;
   }
